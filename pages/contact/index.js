@@ -60,8 +60,8 @@ const Contact = () => {
 
 
   return (
-    <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="lg:h-full h-[80vh] lg:overflow-auto overflow-scroll bg-primary/30 mt-24 lg:mt-0">
+      <div className="container mx-auto py-16 lg:py-32 text-center xl:text-left flex items-center justify-center lg:h-full overflow-scroll lg:overflow-auto">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}

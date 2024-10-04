@@ -112,7 +112,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mt-[40px] lg:mt-0">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -120,7 +120,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="lg:h2 h3"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificent designs.
@@ -130,9 +130,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-sm lg:text-md"
           >
-            A year ago, I began my journey as a frontend developer. Since then,
+            Two years ago, I began my journey as a frontend developer. Since then,
             I’ve worked on freelance projects, collaborated with talented teams,
             and contributed to creating digital products for both business and
             consumer use. I’m a dedicated, curious learner, constantly honing my
@@ -202,7 +202,7 @@ const About = () => {
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize text-sm xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -210,20 +210,20 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start h-20 lg:h-[164px] overflow-scroll lg:overflow-auto">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light mb-2 md:mb-0 text-sm lg:text-md">{item.title}</div>
                   <div className="hidden md:flex">-</div>
-                  <div className="text-white">{item.stage}</div>
+                  <div className="text-white text-sm lg:text-lg">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div key={iconIndex} className="text-2xl text-white">
+                        <div key={iconIndex} className="text-lg lg:text-2xl text-white">
                           {icon}
                         </div>
                       );
