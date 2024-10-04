@@ -47,7 +47,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden" 
-          className="flex justify-center xl:hidden relative z-50">
+          className="flex justify-center xl:hidden relative z-50 pb-20 lg:pb-0">
             <ProjectsBtn />
           </div>
           <motion.div
